@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>UGHHHHH</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="gallery/ravicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/soundscoolstyle.css" />
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<link rel="icon" href="gallery/ravicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Maven+Pro:700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width">
+	<script type="text/javascript">
+		window.onload = function() {setUp()};
+
+		function setUp() {
+			flash();
+		}
+		
+
+		function flash() {
+			window.setInterval(function() {strobe()},100);
+		}
+
+		function strobe() {
+			var color = document.body.style.backgroundColor;
+			if (color == "black") {
+				document.body.style.backgroundColor="white";
+				document.getElementById('lblStrobe').style.color="black";
+			}
+			else {
+				document.body.style.backgroundColor="black";
+				document.getElementById('lblStrobe').style.color="white";
+			}
+		}
+		/*
+		function chooseSong() {
+			var randomSong = [
+				'audio/WhoompThereItIs.mp3',
+				'audio/RhythmOfTheNight.mp3'
+			]
+			var randomNumber = Math.floor(Math.random()*randomSong.length);;
+			var audio = $('#audioFile');
+			audio.attr('src', randomSong[randomNumber]);
+			audio.play();
+			flash();
+		}  */
+	</script>
+	<script type="text/javascript">
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-49693900-1', 'jellytown.me');
+		  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div id="divLabel">
+			<label id="lblStrobe">RAVE CULTURE</label>
+		</div>
+		<audio autoplay controls style="display:none;">
+				<source id="audioFile" src="audio/RhythmOfTheNight5.mp3" type="audio/mp3">
+		</audio>
+		<!-- A work of art by Eric Moore -->
+	</div>
+</body>
+</html>

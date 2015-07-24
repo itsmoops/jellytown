@@ -1,0 +1,33 @@
+body
+{
+	width:100%; 
+	background-color:black; 
+	color:white; 
+	font-family: 'Maven Pro', 'sans-serif';
+}
+
+.wrapper
+{
+	width:95%; 
+	margin:0px auto; 
+	font-size:230pt; 
+	text-align:center;
+}
+
+#divLabel
+{
+	margin-top:3%;
+}
+
+@media screen and (max-width: 610px) {
+	#lblStrobe
+	{
+		font-family: 'Arial';
+		font-size: 50pt;
+	}
+
+	#divLabel
+	{
+		margin-top: 20%;
+	}
+}

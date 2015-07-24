@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+*
+
+{
+
+	margin: 0px;
+
+	padding: 0px;
+
+}
+
+
+
+html 
+
+{
+
+}
+
+
+
+body
+
+{
+
+ 	font-family: Comic Sans MS;
+
+ 	height: 100%;
+
+ 	min-height: 100%;
+
+ 	margin: 0px auto;
+
+ 	background-image: url(../gallery/rsz_jelly_toast_strawberry.jpg);
+ 	
+ 	background-size: 20%;
+
+ 	background-repeat: repeat;
+
+}
+
+#centerBlock
+{
+	max-width: 640px;
+
+	margin: 0px auto;
+}
+
+#header
+{
+	font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+
+	color: #00a8b8;
+
+	font-size: 60pt;
+
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#content
+{
+	padding-top: 22%; 
+}
+
+#video
+{
+	margin-top: 20px;
+}
+
+#gif
+{
+	margin-top: 46px;
+
+	width: 100%;
+}
+
+#shake
+{
+	width: 80%;
+		
+	padding-left: 10%;
+}
+
+@media screen and (max-width: 610px) {
+	#content
+	{
+		padding-top: 20%; 
+	}
+
+	#gif
+	{
+		margin-top: 10%;
+	}
+
+	#shake
+	{
+		width: 80%;
+		
+		padding-left: 10%;
+	}
+
+	#header
+	{
+		font-family: 'Comic Sans MS', 'Marker Felt', sans-serif;
+		
+		color: #00a8b8;
+		
+		font-size: 30pt;
+		
+		font-weight: bold;
+
+		text-align: center;
+	}
+}
